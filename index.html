@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Clima</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container">
+        <h2>CONSULTAR CLIMA</h2>
+        <form id="weatherForm">
+            <input type="text" id="inputciudad" placeholder="Ingrese la ciudad">
+            <button class="consulta" type="submit">Consultar</button>
+            <button class="limpia" type="button" onclick="limpiarFormulario()">Limpiar</button>
+        </form>
+        <div class="resultado"></div>
+        <div id="weatherData"></div>
+        <div id="map"></div>
+    </div>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWa_0ggLT8V0xlH6AtJhdf02xNdJBKIHc&callback=initMap">
+    </script>   
+    <script src="funciones.js"></script>
+</body>
+</html>
